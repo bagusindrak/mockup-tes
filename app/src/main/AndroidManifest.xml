@@ -9,9 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Register"></activity>
+        <activity android:name=".Enam"></activity>
+        <activity android:name=".Lima" />
+        <activity android:name=".Empat" />
+        <activity android:name=".Tiga" />
+        <activity android:name=".Dua" />
+        <activity android:name=".Satu" />
+        <activity android:name=".Register" />
         <activity android:name=".Login" />
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
         <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

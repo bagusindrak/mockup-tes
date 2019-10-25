@@ -6,21 +6,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class Register extends AppCompatActivity {
+public class Dua extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_dua);
     }
 
-
-    public void onBtnLoginNow_Click(View view) {
-        startActivity(new Intent(getApplicationContext(), Login.class));
-        finish();
-    }
-
-    public void onBtnRegister_Click(View view) {
+    public void onBack_Click(View view) {
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
         finish();
     }

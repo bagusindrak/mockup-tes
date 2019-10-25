@@ -17,13 +17,15 @@ public class Login extends AppCompatActivity {
 
     public void onBtnRegister_Click(View view) {
         startActivity(new Intent(getApplicationContext(), Register.class));
+        finish();
     }
 
     public void onBtnLogin_Click(View view) {
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        finish();
     }
 
     public void onTxvForgotPassword_Click(View view) {
-        Toast.makeText(getApplicationContext(), "COmming Soon to Forgot Password", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "Comming Soon to Forgot Password", Toast.LENGTH_SHORT).show();
     }
 }

@@ -18,6 +18,6 @@ public class Tiga extends AppCompatActivity {
     public void onBack_Click(View view) {
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
         finish();
-        //Toast.makeText(this, "Tiga", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "Tiga", Toast.LENGTH_SHORT).show();
     }
 }

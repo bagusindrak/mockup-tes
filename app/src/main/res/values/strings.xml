@@ -7,4 +7,6 @@
     <string name="password">Password</string>
     <string name="username">Username</string>
     <string name="register_new_account">Register New Account</string>
+    <string name="logo_text">Mockup Tes</string>
+    <string name="dts_registration">Registration</string>
 </resources>

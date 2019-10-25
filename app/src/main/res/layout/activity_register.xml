@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.thinking.mockuptes.Register">
-
+    tools:context=".Register">
 
     <TextView
         android:id="@+id/txv_heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="24dp"
+        android:layout_marginTop="64dp"
         android:fontFamily="@font/montserrat_semi_bold"
         android:text="@string/dts_registration"
         android:textColor="#313131"
         android:textSize="32sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="64dp"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txv_subheading"
@@ -56,8 +54,7 @@
         android:hint="Enter Your Email"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/reset_code"
-        />
+        app:layout_constraintTop_toBottomOf="@id/reset_code" />
 
     <TextView
         android:id="@+id/txv_password"
@@ -72,7 +69,6 @@
         app:layout_constraintTop_toBottomOf="@+id/edt_username" />
 
     <EditText
-        android:inputType="textPassword"
         android:id="@+id/edt_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -80,10 +76,10 @@
         android:layout_marginTop="8dp"
         android:layout_marginRight="24dp"
         android:hint="Enter Your Password"
+        android:inputType="textPassword"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txv_password"
-        />
+        app:layout_constraintTop_toBottomOf="@id/txv_password" />
 
     <TextView
         android:id="@+id/txv_email"
@@ -98,7 +94,6 @@
         app:layout_constraintTop_toBottomOf="@+id/edt_password" />
 
     <EditText
-        android:inputType="textEmailAddress"
         android:id="@+id/edt_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -106,10 +101,10 @@
         android:layout_marginTop="8dp"
         android:layout_marginRight="24dp"
         android:hint="Enter Your Email"
+        android:inputType="textEmailAddress"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txv_email"
-        />
+        app:layout_constraintTop_toBottomOf="@id/txv_email" />
 
     <TextView
         android:id="@+id/txv_phone_number"
@@ -124,7 +119,6 @@
         app:layout_constraintTop_toBottomOf="@+id/edt_email" />
 
     <EditText
-        android:inputType="phone"
         android:id="@+id/edt_phone_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -132,27 +126,44 @@
         android:layout_marginTop="8dp"
         android:layout_marginRight="24dp"
         android:hint="@string/enter_your_email"
+        android:inputType="phone"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/txv_phone_number"
-        />
+        app:layout_constraintTop_toBottomOf="@id/txv_phone_number" />
 
     <Button
+        android:id="@+id/btn_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:textSize="18sp"
-        android:layout_marginBottom="200dp"
-        android:background="@drawable/button_red"
-        android:text="@string/register_now"
-        android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@id/edt_phone_number"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="200dp"
+        android:layout_weight="1"
+        android:background="@drawable/button_gray"
+        android:onClick="onBtnLoginNow_Click"
+        android:text="@string/log_in"
+        android:textColor="#000000"
+        android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="onBtnRegisterNow_Click"
-        android:id="@+id/btn_save"
-        />
+        app:layout_constraintTop_toBottomOf="@id/edt_phone_number" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/button_red"
+        android:onClick="onBtnRegister_Click"
+        android:text="@string/register"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
